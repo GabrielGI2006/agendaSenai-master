@@ -23,5 +23,16 @@ $usuarios = new Usuarios();
         foreach($lista as $item):
     ?>
     <tr>
-        <td><?php echo $item['']; ?></td>
+        <td><?php echo $item['id']; ?></td>
+        <td><?php echo $item['nome']; ?></td>
+        <td><?php echo $item['email']; ?></td>
+        <td><?php echo $item['senha']; ?></td>
+        <td><?php echo $item['permissoes']; ?></td>
+        <td>
+            <?php if($usuarios->temPermissoes('EDIT')):?><button><a href="editar_usuario.php?id=<?php echo $item['id']; ?>">EDITAR</a></button><?php endif; ?>
+        </td>
     </tr>
+    <?php
+        endforeach;
+    ?>
+    </table>

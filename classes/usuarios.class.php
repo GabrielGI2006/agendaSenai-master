@@ -61,4 +61,13 @@ class Usuarios {
             return FALSE;
         }
     }
+    public function listar(){
+        try{
+            $sql = $this->con->conectar()->prepare("SELECT id, nome, email, senha, permissoes FROM usuarios");
+            $sql->execute();
+            return $sql->fetchAll();
+        }catch(PDOException $ex){
+            return 'ERRO: '.$ex->getMessage();
+        }
+    }
 }
