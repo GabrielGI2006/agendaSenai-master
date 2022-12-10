@@ -30,6 +30,7 @@ $usuarios = new Usuarios();
         <td><?php echo $item['permissoes']; ?></td>
         <td>
             <?php if($usuarios->temPermissoes('EDIT')):?><button><a href="editar_usuario.php?id=<?php echo $item['id']; ?>">EDITAR</a></button><?php endif; ?>
+                <?php if($usuarios->temPermissoes('DEL')):?><button><a href="excluir_usuario.php?id=<?php echo $item['id']; ?>" onclick="return confirm('Você tem certeza que deseja excluir este contato?')">EXCLUIR</a></button><?php endif; ?>
         </td>
     </tr>
     <?php

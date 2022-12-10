@@ -1,0 +1,16 @@
+body{
+    margin: 0 auto; /* Zera meu site anterior */
+    width: 100%; /* Usa 100% da tela */
+    max-width: 1920px; /* Limita a tela*/
+    background-color:rgb(100, 155, 255);
+
+}
+header{
+    position: relative;
+    background: linear-gradient(rgb(0, 155, 255), rgb(100, 155, 255));
+}
+footer{
+    background: linear-gradient(rgb(100, 155, 255), rgb(0, 155, 255));
+    height: 500px;
+    clear: both;
+}

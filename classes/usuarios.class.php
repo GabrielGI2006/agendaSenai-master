@@ -55,7 +55,7 @@ class Usuarios {
         return $this->permissoes;
     }
     public function temPermissoes($p){
-        if(in_array($p, $this->permissoes)){
+        if(in_array($p, $this->permissoes)){ 
             return TRUE;
         }else{
             return FALSE;

@@ -20,7 +20,7 @@ $usuarios->setUsuario($_SESSION['logado']);
         <br><br>
         <hr>
         <button><a href="sair.php">SAIR</a></button>
-        <table border="1" width="100%">
+        <table class="table table-striped" width="100%">
         <tr>
                 <th>ID</th>
                 <th>NOME</th>
@@ -52,7 +52,8 @@ $usuarios->setUsuario($_SESSION['logado']);
                 endforeach;
         ?>
         </table>
+        <a href="https://i.pinimg.com/564x/23/9c/05/239c05c5dcbf173b8642432fe8e460f1.jpg"><p style="text-align: center; color:dimgray">VEJA VOCÊ MESMO!</p></a>
 <?php
-include 'inc/footer.inc.php';
+        include 'inc/footer.inc.php';
 ?>
         
